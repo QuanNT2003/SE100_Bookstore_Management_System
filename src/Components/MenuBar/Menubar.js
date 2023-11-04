@@ -31,7 +31,7 @@ function Menubar({ id }) {
         <div>
             <div className="MenuBar">
 
-                <div className='d-flex align-items-center ms-4'>
+                <div className='d-flex align-items-center ps-4 '>
                     <img src={logo} alt="" class="my-icon "></img>
                     <p className='name'> Triple K</p>
                 </div>
@@ -39,16 +39,16 @@ function Menubar({ id }) {
 
 
 
-                <p class="btn text-wrap m-0 p-0 w-100" href='#'>
+                <p class="btn text-wrap m-0 p-0 pe-2 w-100" href='#'>
                     <NavLink to="/overview" className={(navData) => navData.isActive ?
                         'w-100 btn text-start bg-primary text-white my-navlink' :
                         'w-100 btn text-start my-navlink'} >
                         <Row>
-                            <Col xs md={2} className='pe-0'>
+                            <Col xs md={1} className='pe-2'>
                                 <FaHouse />
                             </Col>
 
-                            <Col xs md={10} className='text-start ps-0'>
+                            <Col xs md={11} className='text-start ps-2'>
                                 Tổng quan
                             </Col>
                         </Row>

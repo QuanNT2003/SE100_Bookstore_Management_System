@@ -25,9 +25,9 @@ function ToolBar({ array }) {
                 <Row>
                     {
                         arraybtn.map(btn => (
-                            <Col key={btn.id} xs md={5} >
+                            <Col key={btn.id} xs md={5} className='p-0 m-0'>
 
-                                <NavLink to={btn.link} className="text-decoration-none text-white btn text-start w-100 bg-primary toolbar-navlink" >
+                                <NavLink to={btn.link} className="text-decoration-none text-white btn text-start bg-primary toolbar-navlink" >
                                     {
                                         btn.type === 1 ? (
                                             <FaListUl className='me-2' />
