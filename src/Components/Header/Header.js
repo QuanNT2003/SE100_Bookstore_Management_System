@@ -8,12 +8,13 @@ import Image from 'react-bootstrap/Image';
 import { FaBell } from 'react-icons/fa6'
 import { FaAngleLeft } from 'react-icons/fa6';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 Header.propTypes = {
     info: PropTypes.element.isRequired
 };
 
 function Header(info) {
-
+    let navigate = useNavigate();
     useEffect(() => {
 
         console.log(info.info)
@@ -25,10 +26,10 @@ function Header(info) {
                 <Col xs md={8} className='text-start mt-2'>
                     {
                         info.info.title === 'Quay lai' ? (
-                            <p className='title-return text-start pt-2' href='#' >
+                            <a className='title-return text-start pt-2' href='#' onClick={() => navigate(-1)}>
                                 <FaAngleLeft className='me-2' />
                                 Quay lại
-                            </p>
+                            </a>
                         ) : (
                             <p className='title pt-2 text-start'>
                                 {info.info.title}
