@@ -25,7 +25,7 @@ function Header(info) {
             <Row className='w-100'>
                 <Col xs md={8} className='text-start mt-2'>
                     {
-                        info.info.title === 'Quay lai' ? (
+                        info.info.title === 'Quay lại' ? (
                             <a className='title-return text-start pt-2' href='#' onClick={() => navigate(-1)}>
                                 <FaAngleLeft className='me-2' />
                                 Quay lại

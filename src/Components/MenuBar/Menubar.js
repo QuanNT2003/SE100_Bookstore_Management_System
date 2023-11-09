@@ -39,16 +39,16 @@ function Menubar({ id }) {
 
 
 
-                <p class="btn text-wrap m-0 p-0 pe-2 w-100" href='#'>
+                <p class="btn text-wrap ms-2 m-0 p-0 pe-2 w-100" href='#'>
                     <NavLink to="/overview" className={(navData) => navData.isActive ?
-                        'w-100 btn text-start bg-primary text-white my-navlink' :
-                        'w-100 btn text-start my-navlink'} >
+                        'w-100 btn text-start bg-primary text-white' :
+                        'w-100 btn text-start'} >
                         <Row>
                             <Col xs md={1} className='pe-2'>
                                 <FaHouse />
                             </Col>
 
-                            <Col xs md={11} className='text-start ps-2'>
+                            <Col xs md={11} className='text-start ps-3'>
                                 Tổng quan
                             </Col>
                         </Row>
