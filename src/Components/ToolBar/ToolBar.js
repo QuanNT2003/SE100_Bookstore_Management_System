@@ -22,12 +22,11 @@ function ToolBar({ array }) {
     return (
         <div >
             <Container fluid>
-                <Row>
-                    {
-                        arraybtn.map(btn => (
-                            <Col key={btn.id} xs md={5} className='p-0 m-0'>
-
-                                <NavLink to={btn.link} className="text-decoration-none text-white btn text-start bg-primary toolbar-navlink" >
+                <Row className='w-100'>
+                    <Col>
+                        {
+                            arraybtn.map(btn => (
+                                <NavLink to={btn.link} key={btn.id} className="text-decoration-none text-white btn text-start bg-primary pe-4 me-4 mb-2" >
                                     {
                                         btn.type === 1 ? (
                                             <FaListUl className='me-2' />
@@ -36,15 +35,16 @@ function ToolBar({ array }) {
                                         )
                                     }
                                     {btn.title}
-
                                 </NavLink>
 
 
 
-                            </Col>
 
-                        ))
-                    }
+
+                            ))
+                        }
+                    </Col>
+
                 </Row>
 
             </Container>

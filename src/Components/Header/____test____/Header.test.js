@@ -5,7 +5,7 @@ test('renders header and find title', () => {
     const header =
     {
         id: 1,
-        title: "Trang sản phẩm",
+        title: "Quay lại",
         img: "https://upload.wikimedia.org/wikipedia/vi/1/1d/Manchester_City_FC_logo.svg",
         name: "Pham Tuan Kiet",
     }
