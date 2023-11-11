@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { FaFilePen } from 'react-icons/fa6'
 import { FaPrint } from 'react-icons/fa6'
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 Input_Output.propTypes = {
 
 };

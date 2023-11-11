@@ -9,6 +9,7 @@ import { FaBell } from 'react-icons/fa6'
 import { FaAngleLeft } from 'react-icons/fa6';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 Header.propTypes = {
     info: PropTypes.element.isRequired
 };

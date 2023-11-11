@@ -15,7 +15,7 @@ import { Route, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 Menubar.propTypes = {
     id: PropTypes.string.isRequired

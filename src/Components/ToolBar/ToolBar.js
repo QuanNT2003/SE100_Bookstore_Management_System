@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import { FaListUl } from 'react-icons/fa6'
 import { FaCirclePlus } from 'react-icons/fa6'
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 ToolBar.propTypes = {
     array: PropTypes.array.isRequired
 };
