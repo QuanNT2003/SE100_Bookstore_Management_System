@@ -21,34 +21,33 @@ function ToolBar({ array }) {
         console.log(arraybtn)
     })
     return (
-        <div >
-            <Container fluid>
-                <Row className='w-100'>
-                    <Col>
+        <div className='ToolBar'>
+
+            {
+                arraybtn.map(btn => (
+
+                    <NavLink to={btn.link} className="text-decoration-none text-white btn text-start bg-primary pe-4 me-4 mb-2" >
                         {
-                            arraybtn.map(btn => (
-                                <NavLink to={btn.link} key={btn.id} className="text-decoration-none text-white btn text-start bg-primary pe-4 me-4 mb-2" >
-                                    {
-                                        btn.type === 1 ? (
-                                            <FaListUl className='me-2' />
-                                        ) : (
-                                            <FaCirclePlus className='me-2' />
-                                        )
-                                    }
-                                    {btn.title}
-                                </NavLink>
-
-
-
-
-
-                            ))
+                            btn.type === 1 ? (
+                                <FaListUl className='me-2' />
+                            ) : (
+                                <FaCirclePlus className='me-2' />
+                            )
                         }
-                    </Col>
+                        {btn.title}
+                    </NavLink>
 
-                </Row>
 
-            </Container>
+
+
+
+
+
+                ))
+            }
+
+
+
 
         </div>
     );

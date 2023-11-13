@@ -15,13 +15,13 @@ function Input_Output(props) {
     return (
 
         <div className='d-flex Input_Output'>
-            <Button variant="primary" className='me-3 mb-2 w-50 text-start'>
+            <Button variant="primary" className='me-3 mb-2 Input_Output-btn text-start'>
                 <FaFilePen className='me-2' />
                 Nhập file
             </Button>
 
 
-            <Button variant="primary" className='me-3  mb-2 w-50 text-start'>
+            <Button variant="primary" className='me-3 mb-2 Input_Output-btn text-start'>
                 <FaPrint className='me-2' />
                 Xuất file
             </Button>
