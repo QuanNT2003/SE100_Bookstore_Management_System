@@ -39,7 +39,7 @@ function Header(info) {
                     }
 
                 </Col>
-                <Col xs md={4} className='d-flex align-items-center'>
+                <Col xs md={4} className='align-items-center'>
                     <Row >
                         <Col xs md={6} className='text-end d-flex justify-content-end align-items-center'>
                             <FaBell className='header-icon' />
