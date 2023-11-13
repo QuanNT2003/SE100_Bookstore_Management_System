@@ -14,7 +14,7 @@ Input_Output.propTypes = {
 function Input_Output(props) {
     return (
 
-        <div className='d-flex'>
+        <div className='d-flex Input_Output'>
             <Button variant="primary" className='me-3 mb-2 w-50 text-start'>
                 <FaFilePen className='me-2' />
                 Nhập file

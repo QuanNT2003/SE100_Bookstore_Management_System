@@ -8,9 +8,7 @@
 .MenuBar{
     background: white;
     height: 100%;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter' , sans-serif;
 }
 
 
