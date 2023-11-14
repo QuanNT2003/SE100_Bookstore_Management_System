@@ -28,285 +28,284 @@ function Menubar({ id }) {
 
     )
     return (
-        <div>
-            <div className="MenuBar">
+        <div className="MenuBar">
 
-                <div className='d-flex align-items-center ps-4 '>
-                    <img src={logo} alt="" class="my-icon "></img>
-                    <p className='name'> Triple K</p>
-                </div>
-
+            <div className='d-flex align-items-center ps-4 '>
+                <img src={logo} alt="" class="my-icon "></img>
+                <p className='name'> Triple K</p>
+            </div>
 
 
 
-                <p class="btn text-wrap ms-2 m-0 p-0 pe-2 w-100" href='#'>
-                    <NavLink to="/overview" className={(navData) => navData.isActive ?
-                        'w-100 btn text-start bg-primary text-white' :
-                        'w-100 btn text-start'} >
-                        <Row>
-                            <Col xs md={1} className='pe-2'>
-                                <FaHouse />
+
+            <p class="btn text-wrap ms-2 m-0 p-0 pe-2 w-100" href='#'>
+                <NavLink to="/overview" className={(navData) => navData.isActive ?
+                    'w-100 btn bg-primary text-white' :
+                    'w-100 btn'} >
+                    <Row>
+                        <Col xs md={2}>
+                            <FaHouse />
+                        </Col>
+
+                        <Col xs md={10} className='ps-1 accor-header'>
+                            Tổng quan
+                        </Col>
+                    </Row>
+
+                </NavLink>
+
+
+
+            </p>
+
+            <div>
+                <Accordion alwaysOpen defaultActiveKey={id}>
+
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaCartShopping />
                             </Col>
 
-                            <Col xs md={11} className='text-start ps-3'>
-                                Tổng quan
+                            <Col xs md={10} className='accor-header'>
+                                Đơn hàng
                             </Col>
+
+
                         </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/1" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
 
-                    </NavLink>
-
-
-
-                </p>
-
-                <div>
-                    <Accordion alwaysOpen defaultActiveKey={id}>
-
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header><Row>
-                                <Col xs md={3}>
-                                    < FaCartShopping />
-                                </Col>
-
-                                <Col xs md={9} className='text-start ps-2 pe-0'>
-                                    Đơn hàng
-                                </Col>
+                            <NavLink to="/2" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
 
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/1" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
+                    <Accordion.Item eventKey="1" >
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaBuffer />
+                            </Col>
 
-                                <NavLink to="/2" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                            <Col xs md={10} className='accor-header'>
+                                Sản phẩm
+                            </Col>
 
 
-                        <Accordion.Item eventKey="1" >
-                            <Accordion.Header><Row>
-                                <Col xs md={3}>
-                                    < FaBuffer />
-                                </Col>
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100' >
+                            <NavLink to="/product" className={(navData) => navData.isActive ?
+                                'w-100 btn bg-primary text-white' :
+                                'w-100 btn'} >
+                                <li className='my-navlink'>Danh sách sản phẩm</li>
 
-                                <Col xs md={9} className='text-start ps-2 pe-0'>
-                                    Sản phẩm
-                                </Col>
+                            </NavLink>
+                            <NavLink to="/3" className={(navData) => navData.isActive ?
+                                'w-100 btn bg-primary text-white' :
+                                'w-100 btn'}>
+                                <li className='my-navlink'>Quản lý kho</li>
+                            </NavLink>
+                            <NavLink to="/4" className={(navData) => navData.isActive ?
+                                'w-100 btn bg-primary text-white' :
+                                'w-100 btn '}>
+                                <li className='my-navlink'>Nhập hàng</li>
 
+                            </NavLink>
+                            <NavLink to="/5" className={(navData) => navData.isActive ?
+                                'w-100 btn bg-primary text-white' :
+                                'w-100 btn '}>
+                                <li className='my-navlink'>Kiểm hàng</li>
 
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100' >
-                                <NavLink to="/product" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'} >
-                                    <li className='ps-3'>Danh sách sản phẩm</li>
+                            </NavLink>
+                            <NavLink to="/6" className={(navData) => navData.isActive ?
+                                'w-100 btn bg-primary text-white' :
+                                'w-100 btn '}>
+                                <li className='my-navlink'>Nhà cung cấp</li>
 
-                                </NavLink>
-                                <NavLink to="/3" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Quản lý kho</li>
-                                </NavLink>
-                                <NavLink to="/4" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-
-                                </NavLink>
-                                <NavLink to="/5" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Kiểm hàng</li>
-
-                                </NavLink>
-                                <NavLink to="/6" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhà cung cấp</li>
-
-                                </NavLink>
+                            </NavLink>
 
 
 
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                        <Accordion.Item eventKey="2">
-                            <Accordion.Header><Row>
-                                <Col xs md={3}>
-                                    < FaUser />
-                                </Col>
+                    <Accordion.Item eventKey="2">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaUser />
+                            </Col>
 
-                                <Col xs md={9} className='text-start ps-2 pe-0'>
-                                    Khách hàng
-                                </Col>
-
-
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/7" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                                <NavLink to="/8" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-                        <Accordion.Item eventKey="3">
-                            <Accordion.Header><Row>
-                                <Col xs md={4}>
-                                    < FaWallet />
-                                </Col>
-
-                                <Col xs md={8} className='text-start ps-2 pe-0'>
-                                    Sổ quỹ
-                                </Col>
+                            <Col xs md={10} className='accor-header'>
+                                Khách hàng
+                            </Col>
 
 
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/9" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                                <NavLink to="/10" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/7" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                            <NavLink to="/8" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                        <Accordion.Item eventKey="4">
-                            <Accordion.Header><Row>
-                                <Col xs md={3}>
-                                    < FaChartSimple />
-                                </Col>
+                    <Accordion.Item eventKey="3">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaWallet />
+                            </Col>
 
-                                <Col xs md={9} className='text-start ps-2 pe-0'>
-                                    Báo cáo
-                                </Col>
-
-
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/11" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                                <NavLink to="/12" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-                        <Accordion.Item eventKey="5">
-                            <Accordion.Header><Row>
-                                <Col xs md={2}>
-                                    < FaBuffer />
-                                </Col>
-
-                                <Col xs md={10} className='text-start ps-1 pe-0'>
-                                    Quản lý khuyến mãi
-                                </Col>
+                            <Col xs md={10} className='accor-header'>
+                                Sổ quỹ
+                            </Col>
 
 
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/13" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                                <NavLink to="/14" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/9" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                            <NavLink to="/10" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                        <Accordion.Item eventKey="6">
-                            <Accordion.Header><Row>
-                                <Col xs md={2}>
-                                    < FaUsers />
-                                </Col>
+                    <Accordion.Item eventKey="4">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaChartSimple />
+                            </Col>
 
-                                <Col xs md={10} className='text-start ps-2 pe-0'>
-                                    Quản lý nhân viên
-                                </Col>
-
-
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/15" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                                <NavLink to="/16" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
-                        <Accordion.Item eventKey="7">
-                            <Accordion.Header><Row>
-                                <Col xs md={2} className='pe-0'>
-                                    < FaBusinessTime />
-                                </Col>
-
-                                <Col xs md={10} className='text-start ps-2 pe-0'>
-                                    Nhật ký hoạt động
-                                </Col>
+                            <Col xs md={10} className='accor-header'>
+                                Báo cáo
+                            </Col>
 
 
-                            </Row>
-                            </Accordion.Header>
-                            <Accordion.Body className='p-0 w-100'>
-                                <NavLink to="/17" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                                <NavLink to="/18" className={(navData) => navData.isActive ?
-                                    'w-100 btn text-start bg-primary text-white' :
-                                    'w-100 btn text-start'}>
-                                    <li className='ps-3'>Nhập hàng</li>
-                                </NavLink>
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion>
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/11" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                            <NavLink to="/12" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
 
-                </div>
+                    <Accordion.Item eventKey="5">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaBuffer />
+                            </Col>
+
+                            <Col xs md={10} className='accor-header'>
+                                Quản lý khuyến mãi
+                            </Col>
+
+
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/13" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                            <NavLink to="/14" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
+
+                    <Accordion.Item eventKey="6">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2}>
+                                < FaUsers />
+                            </Col>
+
+                            <Col xs md={10} className='accor-header'>
+                                Quản lý nhân viên
+                            </Col>
+
+
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/15" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                            <NavLink to="/16" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
+
+                    <Accordion.Item eventKey="7">
+                        <Accordion.Header><Row className='w-100'>
+                            <Col xs md={2} className='pe-0'>
+                                < FaBusinessTime />
+                            </Col>
+
+                            <Col xs md={10} className='accor-header'>
+                                Nhật ký hoạt động
+                            </Col>
+
+
+                        </Row>
+                        </Accordion.Header>
+                        <Accordion.Body className='p-0 w-100'>
+                            <NavLink to="/17" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                            <NavLink to="/18" className={(navData) => navData.isActive ?
+                                'btn bg-primary text-white w-100' :
+                                'btn w-100'}>
+                                <li className='my-navlink'>Nhập hàng</li>
+                            </NavLink>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
 
             </div>
+
         </div>
+
     );
 }
 
