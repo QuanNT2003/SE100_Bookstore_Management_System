@@ -23,7 +23,7 @@ function ToolBar({ array }) {
             {
                 arraybtn.map(btn => (
 
-                    <NavLink to={btn.link} className="btn bg-primary navlink-toolbar" >
+                    <NavLink to={btn.link} className="btn bg-primary navlink-toolbar text-white" >
                         {
                             btn.type === 1 ? (
                                 <FaListUl className='me-2' />

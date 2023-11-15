@@ -8,18 +8,32 @@
 .MenuBar{
     background: white;
     height: 100%;
+    width: 90%;
     font-family: 'Inter' , sans-serif;
+    align-items: center;
+    
 }
 
+/* // */
 
-
-.my-navlink{
+.my-li{
     text-decoration: none;
     font-size: 16px;
-    width: 100%;
+    width: 90%;
+    height: 30px;
     text-align: start;
     padding-left: 15px;
+    
+    
 }
+
+.my-navlink{
+    width: 90%;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+
 
 .accor-header{
     text-align: start;
@@ -31,4 +45,11 @@
 .name{
     font-size: 30px;
     font-weight: 600;
+}
+
+p{
+    width: 90%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
 }

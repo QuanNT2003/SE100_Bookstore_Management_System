@@ -38,13 +38,13 @@ function Menubar({ id }) {
 
 
 
-            <p class="btn text-wrap ms-2 m-0 p-0 pe-2 w-100" href='#'>
+            <p class="btn text-wrap w-100 mb-0" href='#'>
                 <NavLink to="/overview" className={(navData) => navData.isActive ?
-                    'w-100 btn bg-primary text-white' :
-                    'w-100 btn'} >
+                    'btn bg-primary text-white w-100' :
+                    'btn w-100'} >
                     <Row>
                         <Col xs md={2}>
-                            <FaHouse />
+                            <FaHouse className='ms-0' />
                         </Col>
 
                         <Col xs md={10} className='ps-1 accor-header'>
@@ -62,12 +62,12 @@ function Menubar({ id }) {
                 <Accordion alwaysOpen defaultActiveKey={id}>
 
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header><Row className='w-100'>
+                        <Accordion.Header><Row className='w-100 accor-header'>
                             <Col xs md={2}>
                                 < FaCartShopping />
                             </Col>
 
-                            <Col xs md={10} className='accor-header'>
+                            <Col xs md={10} className=''>
                                 Đơn hàng
                             </Col>
 
@@ -76,15 +76,15 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/1" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'btn bg-primary text-white my-navlink' :
+                                'btn my-navlink'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
 
                             <NavLink to="/2" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'btn bg-primary text-white my-navlink' :
+                                'btn my-navlink'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -105,32 +105,32 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100' >
                             <NavLink to="/product" className={(navData) => navData.isActive ?
-                                'w-100 btn bg-primary text-white' :
-                                'w-100 btn'} >
-                                <li className='my-navlink'>Danh sách sản phẩm</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn'} >
+                                <li className='my-li'>Danh sách sản phẩm</li>
 
                             </NavLink>
                             <NavLink to="/3" className={(navData) => navData.isActive ?
-                                'w-100 btn bg-primary text-white' :
-                                'w-100 btn'}>
-                                <li className='my-navlink'>Quản lý kho</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Quản lý kho</li>
                             </NavLink>
                             <NavLink to="/4" className={(navData) => navData.isActive ?
-                                'w-100 btn bg-primary text-white' :
-                                'w-100 btn '}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn '}>
+                                <li className='my-li'>Nhập hàng</li>
 
                             </NavLink>
                             <NavLink to="/5" className={(navData) => navData.isActive ?
-                                'w-100 btn bg-primary text-white' :
-                                'w-100 btn '}>
-                                <li className='my-navlink'>Kiểm hàng</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn '}>
+                                <li className='my-li'>Kiểm hàng</li>
 
                             </NavLink>
                             <NavLink to="/6" className={(navData) => navData.isActive ?
-                                'w-100 btn bg-primary text-white' :
-                                'w-100 btn '}>
-                                <li className='my-navlink'>Nhà cung cấp</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn '}>
+                                <li className='my-li'>Nhà cung cấp</li>
 
                             </NavLink>
 
@@ -154,14 +154,14 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/7" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                             <NavLink to="/8" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -181,14 +181,14 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/9" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                             <NavLink to="/10" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -208,14 +208,14 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/11" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                             <NavLink to="/12" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -235,14 +235,14 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/13" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                             <NavLink to="/14" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -262,14 +262,14 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/15" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                             <NavLink to="/16" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
@@ -289,14 +289,14 @@ function Menubar({ id }) {
                         </Accordion.Header>
                         <Accordion.Body className='p-0 w-100'>
                             <NavLink to="/17" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white ' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                             <NavLink to="/18" className={(navData) => navData.isActive ?
-                                'btn bg-primary text-white w-100' :
-                                'btn w-100'}>
-                                <li className='my-navlink'>Nhập hàng</li>
+                                'my-navlink btn bg-primary text-white' :
+                                'my-navlink btn'}>
+                                <li className='my-li'>Nhập hàng</li>
                             </NavLink>
                         </Accordion.Body>
                     </Accordion.Item>
